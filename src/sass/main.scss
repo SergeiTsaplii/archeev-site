@@ -1,0 +1,93 @@
+// Настройки
+@import "_config/variables";
+@import "_config/fonts";
+
+// Миксины
+@import "_mixins/reset";
+@import "_mixins/media";
+@import "_mixins/container";
+@import "_mixins/flex";
+
+@import "_vendor/libs";
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box
+}
+
+html, body {
+  @include reset-model;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #e5e5e5;
+
+  @include font-helvetica-regular;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+}
+
+
+// Визуальное скрытие элементов
+.vhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+// Изображения
+img {
+  max-width: 100%;
+}
+
+
+// Ограничение для макета
+.wrapper {
+  @include wrapper;
+  background-color: $color-bg-base;
+  color: $color-text-base;
+}
+
+// Контентная область
+.container {
+  @include container;
+}
+
+.btn {
+  @include reset-button;
+  background-color: $color-primary;
+  border-radius: 6px;
+  padding: 20px 40px;
+  color: $color-bg-base;
+  transition: background-color .3s ease-in;
+  font-size: 16px;
+
+
+  &:hover {
+    background-color: darken($color-primary, 5%);
+  }
+}
+
+.title {
+  @include font-cabinet-black;
+  font-size: 48px;
+  line-height: 60px;
+  color: #2C2321;
+}
+
+.descr {
+  @include font-helvetica-regular;
+  font-size: 18px;
+  line-height: 30px;
+  color: #61594D;
+}
+
+// Подключение блоков
+@import 'block/*.scss';

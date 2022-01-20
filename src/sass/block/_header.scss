@@ -1,0 +1,21 @@
+.header {
+  background-color: $color-bg-header;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    @include font-cabinet-bold;
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  &__logo {
+    margin-top: 9px;
+  }
+}

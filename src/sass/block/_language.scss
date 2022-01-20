@@ -1,0 +1,11 @@
+.language {
+  border: none;
+  color: #2C2321;
+  @include font-helvetica-medium;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  margin-right: 30px;
+  cursor: pointer;
+  background-color: $color-bg-header;
+}

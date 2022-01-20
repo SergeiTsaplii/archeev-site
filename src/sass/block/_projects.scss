@@ -1,0 +1,58 @@
+.projects {
+  padding-top: 15px;
+  padding-bottom: 120px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  &__item {
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 50px 50px;
+
+    &:not(:last-child) {
+      margin-right: 134px;
+    }
+
+    &--technical {
+      background-image: url('../img/technical.svg');
+    }
+
+    &--design {
+      background-image: url('../img/web-design.svg');
+    }
+
+    &--building {
+      background-image: url('../img/building.svg');
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 70px;
+    font-size: 32px;
+  }
+
+  &__descr {
+    margin: 0;
+  }
+
+  &__link {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #61594D;
+    text-decoration: underline;
+    transition: color .3s ease-in;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

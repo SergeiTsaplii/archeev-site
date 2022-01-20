@@ -1,0 +1,40 @@
+.about {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #FDFBF6;
+  min-height: 600px;
+
+  &__container {
+    @include flex-center;
+  }
+
+  &__left {
+    margin-right: 37px;
+  }
+
+  &__img {
+    display: block;
+    margin-left: -80px;
+    width: 833px;
+    height: 533px;
+    object-fit: cover;
+  }
+
+  &__right {
+    width: 455px;
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: -15px;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    margin: 0;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+}

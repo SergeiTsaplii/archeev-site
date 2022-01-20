@@ -1,0 +1,14 @@
+.callback {
+
+  &__phone {
+    color: $color-primary;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 18px;
+    max-width: 249px;
+  }
+}

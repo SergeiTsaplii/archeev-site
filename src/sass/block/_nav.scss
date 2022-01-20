@@ -1,0 +1,28 @@
+.nav {
+  margin-right: -80px;
+  &__list {
+    @include reset-list;
+    @include flex-center;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__link {
+    @include reset-link;
+    @include font-helvetica-medium;
+    font-size: 14px;
+    line-height: 21px;
+    color: #2C2321;
+    text-transform: uppercase;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom .3s ease-in;
+
+    &:hover {
+      border-bottom: 1px solid currentColor;
+    }
+  }
+}
