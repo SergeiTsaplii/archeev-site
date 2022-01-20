@@ -236,7 +236,7 @@ img {
 .hero__top::after {
   position: absolute;
   content: "";
-  background-image: url("../img/star.png");
+  background-image: url("../img/star.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -583,7 +583,7 @@ img {
 
 @supports (-webkit-appearance:none) {
   .hero__top::after {
-    background-image: url("../img/star.webp");
+    background-image: url("../img/star.svg");
   }
 
   .hero__top::before {
