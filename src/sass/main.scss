@@ -80,6 +80,19 @@ img {
   font-size: 48px;
   line-height: 60px;
   color: #2C2321;
+  &_divider {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 300px;
+      height: 1px;
+      left: 0;
+      margin-top: -20px;
+      background-color: #61594D;
+    }
+
+  }
 }
 
 .descr {

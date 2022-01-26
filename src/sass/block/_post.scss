@@ -1,0 +1,36 @@
+.post {
+  display: flex;
+  justify-content: space-between;
+
+  &__item {
+    width: 49%;
+  }
+
+  &__block {
+    margin-top: 50px;
+    max-width: 479px
+  }
+
+  &__data {
+    margin-bottom: 10px;
+  }
+
+  &__title {
+    @include reset-model;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+
+    &.title_divider {
+      &::after {
+        margin-top: -50px;
+      }
+    }
+  }
+
+  &__descr {
+    @include reset-model;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

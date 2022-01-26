@@ -1,0 +1,52 @@
+.project {
+  &__item {
+    display: flex;
+    align-items: flex-end;
+
+    &:not(:last-child) {
+      margin-bottom: 150px;
+    }
+
+    &:nth-child(odd) {
+      flex-direction: row-reverse;
+      .project__img {
+        margin-right: -150px;
+        width: 770px;
+        object-fit: cover;
+        max-width: none;
+      }
+
+      .project__block {
+        margin-right: auto;
+        margin-left: 0;
+      }
+    }
+
+  }
+  &__img {
+    display: block;
+    object-fit: cover;
+    width: 700px;
+    height: 500px;
+  }
+
+  &__block {
+    max-width: 330px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+
+  &__title {
+    @include reset-model;
+    font-size: 32px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+
+  &__descr {
+    @include reset-model;
+    font-size: 16px;
+    line-height: 28px;
+  }
+}

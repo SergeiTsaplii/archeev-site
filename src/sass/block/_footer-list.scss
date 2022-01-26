@@ -1,0 +1,9 @@
+.footer-list {
+  @include reset-list;
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    @include reset-link;
+  }
+}

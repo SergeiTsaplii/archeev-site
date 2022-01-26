@@ -1,0 +1,27 @@
+.post-data {
+  @include font-helvetica-bold;
+  font-size: 14px;
+  line-height: 28px;
+  color: #61594D;
+  &__data {
+    margin-right: 13px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: $color-primary;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 100%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+
+  &__author {
+    margin-left: 5px;
+  }
+}
